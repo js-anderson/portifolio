@@ -61,6 +61,12 @@ input.numero {
 	background-image: url(/img/icone-cadeado.png);
 }
 
+input.descreva{
+	background-image: url(/img/icone-cadeado.png);
+	display: 5;
+
+}
+
 input.submit {
 	color: #fff;
 	background-color: #f79300;
@@ -84,7 +90,7 @@ input.submit {
 
 	<body>
 
-		 <header><!-- inicio Cabecalho -->
+		<header><!-- inicio Cabecalho -->
       <nav class="navbar navbar-expand-sm navbar-dark">
         <div class="container">
           
@@ -105,7 +111,7 @@ input.submit {
                     data-toggle="dropdown">Currículo</a>
                     <div class="dropdown-menu">
                         <a href="formacao.html" class="dropdown-item text-dark">Formação</a>
-                        <a href="" class="dropdown-item text-dark">Experiência</a>
+                        <a href="experiencia.html" class="dropdown-item text-dark">Experiência</a>
                         <a href="contato.html" class="dropdown-item text-dark">Contato</a>
                     </div>
               </button>
@@ -115,6 +121,8 @@ input.submit {
         </div>
       </nav>
      </header><!--/fim Cabecalho -->
+
+    <!--Fim cabeçalho -->
 		
 		<div id="container">
 
@@ -127,11 +135,14 @@ input.submit {
 				</div>
 
 				<div>
-					<input class="senha" type="text" name="numero" id="numero" placeholder="Telefone" >
+					<input class="numero" type="text" name="numero" id="numero" placeholder="Telefone" >
 				</div>
-
+				<div class="form-group">
+            	<label for="mensagem">Mensagem</label>
+            	<textarea class="form-control" id="mensagem" rows="3"></textarea>
+        		</div>
 				<div>
-					<input class="submit" type="submit" value="Logar">
+					<input class="submit" type="submit" value="Enviar">
 				</div>
 
 			</form>
